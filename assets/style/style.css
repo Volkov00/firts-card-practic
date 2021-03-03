@@ -6,9 +6,11 @@ body {
   color: white;
   font-family: sans-serif;
 }
+
 .wrapper {
   width: 400px;
   padding: 20px 0;
+  display: inline-block;
   border-radius: 2%;
   background: rgb(254, 190, 154);
   background: linear-gradient(
@@ -18,6 +20,26 @@ body {
     rgba(248, 140, 155, 1) 72%
   );
   position: relative;
+}
+.wrapper:nth-child(2){
+  background: rgb(133,197,245);
+background: linear-gradient(90deg, rgba(133,197,245,0.9360119047619048) 4%, rgba(137,178,246,0.9724264705882353) 32%, rgba(101,178,230,1) 67%);
+}
+.wrapper:nth-child(3){
+  background: rgb(174,232,227);
+  background: linear-gradient(90deg, rgba(174,232,227,1) 12%, rgba(81,237,219,0.9780287114845938) 42%, rgba(70,224,207,1) 73%);
+}
+.wrapper:nth-child(3) .title::after{
+  content: url("../img/diamond.svg");
+  vertical-align: middle;
+  position: absolute;
+  left: 100%;
+}
+.wrapper:nth-child(2) .title::after{
+  content: url("../img/cash-100.svg");
+  vertical-align: middle;
+  position: absolute;
+  left: 100%;
 }
 .wrapper::before{
   content: "";
